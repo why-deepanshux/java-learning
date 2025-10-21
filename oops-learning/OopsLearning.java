@@ -20,11 +20,30 @@ class B extends A {
         System.out.println("I am a function of class B");
     }
 }
+
+// multiple inheritance 
+class C {
+    void show(){
+        System.out.println("In class C");
+    }
+}
+
+class D extends C {
+    void show(){
+        System.out.println("In class D");
+    }
+}
+
+
 public class OopsLearning {
     public static void main(String args[]) {
         A objA = new A();
         B objB = new B();
         A objAB = new B();
         objAB.show();
+
+        int num1 = 4;
+        Integer num = num1; // auto boxing
+        int num2 = num; // auto unboxing
     }
 }
